@@ -112,7 +112,7 @@ p {
   }
 }
 body {
-  animation: fadein 2s forwards;
+  animation: fadein 1.5s forwards;
 }
 
 img {
@@ -123,13 +123,28 @@ img {
   vertical-align: bottom;
 }
 
+.w1280 {
+  width: 95% !important;
+  max-width: 1280px;
+  margin: auto;
+}
+.w1280.-s100 {
+  width: 100% !important;
+}
+.w1280.-s60 {
+  width: 60% !important;
+}
+
 .w1200 {
   width: 95% !important;
-  max-width: 1200px;
+  max-width: 1200px !important;
   margin: auto;
 }
 .w1200.-s100 {
   width: 100% !important;
+}
+.w1200.-s60 {
+  width: 60% !important;
 }
 
 .w1050 {
@@ -498,6 +513,54 @@ img {
   width: 100%;
   position: absolute;
 }
+.l-contents.-img-bg .l-contentsBox.-icon_pickup {
+  top: -63px;
+  left: 2%;
+  width: 15%;
+}
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-icon_pickup {
+    top: -15%;
+    left: 16%;
+    width: 7%;
+  }
+}
+.l-contents.-img-bg .l-contentsBox.-icon_column01 {
+  top: 2.5%;
+  left: 2%;
+  width: 15%;
+}
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-icon_column01 {
+    top: -32%;
+    left: 17%;
+    width: 5%;
+  }
+}
+.l-contents.-img-bg .l-contentsBox.-icon_column02 {
+  top: 36%;
+  left: 2%;
+  width: 15%;
+}
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-icon_column02 {
+    top: -32%;
+    left: 38%;
+    width: 5%;
+  }
+}
+.l-contents.-img-bg .l-contentsBox.-icon_column03 {
+  top: 69.5%;
+  left: 2%;
+  width: 15%;
+}
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-icon_column03 {
+    top: -32%;
+    left: 58.5%;
+    width: 5%;
+  }
+}
 .l-contents.-img-bg .l-contentsBox.-right-topBtn {
   top: 2.5%;
   left: 50%;
@@ -537,6 +600,46 @@ img {
 .l-contents.-img-bg .l-contentsBox.-bottom-leftBtn a {
   display: block;
   padding: 0% 24%;
+}
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-contactBtn {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-kukaku_link {
+    top: 89%;
+    left: 25%;
+    width: 14%;
+  }
+}
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-plan-card01 {
+    top: 17%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-plan-card02 {
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-JYUKYO-house {
+    top: 23%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.l-contents.-img-bg .l-contentsBox.-JYUKYO-btmBtn {
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .l-contents.-img-bg .l-contentsBox .l-contentsBox--wrapper {
   width: 100%;
@@ -4999,6 +5102,9 @@ header {
 
 @keyframes fadein {
   0% {
+    opacity: 0;
+  }
+  50% {
     opacity: 0;
   }
   100% {

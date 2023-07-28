@@ -57,7 +57,7 @@
 
 
 body{
-	animation: fadein 2s forwards;
+	animation: fadein 1.5s forwards;
 }
 img{
 	pointer-events: none;
@@ -68,14 +68,26 @@ img{
 }
 
 
-
-
-.w1200{
+.w1280{
 	width: 95% !important;
-	max-width: 1200px;
+	max-width: 1280px;
 	margin: auto;
 	&.-s100{
 		width: 100% !important;
+	}
+	&.-s60{
+		width: 60% !important;
+	}
+}
+.w1200{
+	width: 95% !important;
+	max-width: 1200px !important;
+	margin: auto;
+	&.-s100{
+		width: 100% !important;
+	}
+	&.-s60{
+		width: 60% !important;
 	}
 }
 .w1050{
