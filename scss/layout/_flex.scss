@@ -317,15 +317,24 @@
 		}
 		&.-columnBox02{
 				display: flex;
-				flex-wrap: nowrap;
-				align-items: flex-start;
-				justify-content: space-around;
+				flex-wrap: wrap;
+				@include mq(tb){
+					flex-wrap: nowrap;
+					align-items: flex-start;
+					justify-content: space-around;
+				}
 				.flexItem{
-					width: 100%;
-					padding: 0 5%;
+					width: 97%;
+					padding: 0;
+					margin: auto;
 					@include mq(tb){
 						width: 50%;
 						padding: 0 2%;
+					}
+					&.-single{
+						@include mq(tb){
+							width: 35%;
+						}
 					}
 					&.title{
 						@include mq(tb){
